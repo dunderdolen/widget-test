@@ -11,8 +11,8 @@ const OktaSignInWidget = ({ config, onSuccess, onError }) => {
     const widget = new OktaSignIn(config);
 
     widget.showSignInToGetTokens({
-      el: widgetRef.current, onSuccess
-    });
+      el: widgetRef.current,
+    }).then(onSuccess).catch(onError);
 
     return () => widget.remove();
   }, [config, onSuccess, onError]);
@@ -20,3 +20,5 @@ const OktaSignInWidget = ({ config, onSuccess, onError }) => {
   return (<div ref={widgetRef} />);
 };
 export default OktaSignInWidget;
+
+

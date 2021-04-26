@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+#okta-sign-in.auth-container.main-container {
+  background-color: red;
+}
+
+#okta-sign-in .beacon-blank {
+  background-color: red;
+}

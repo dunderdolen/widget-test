@@ -9,7 +9,7 @@ const Navbar = () => {
             <AppBar position="static">
                 <ToolBar>
                     <Typography title="title" color="inherit">
-                        CRUD Portal
+                        Permutator Portal
                     </Typography>
                 </ToolBar>
             </AppBar>
